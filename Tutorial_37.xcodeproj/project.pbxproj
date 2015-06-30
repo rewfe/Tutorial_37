@@ -14,6 +14,11 @@
 		84669FC61B421F400011D81A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84669FC51B421F400011D81A /* Images.xcassets */; };
 		84669FC91B421F400011D81A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84669FC71B421F400011D81A /* LaunchScreen.xib */; };
 		84669FD51B421F400011D81A /* Tutorial_37Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84669FD41B421F400011D81A /* Tutorial_37Tests.m */; };
+		84669FDF1B42264C0011D81A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84669FDE1B42264C0011D81A /* UIKit.framework */; };
+		84669FE11B4226BC0011D81A /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84669FE01B4226BC0011D81A /* FacebookSDKStrings.bundle */; };
+		84669FE31B4227270011D81A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84669FE21B4227270011D81A /* FBSDKCoreKit.framework */; };
+		84669FE51B42273E0011D81A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84669FE41B42273E0011D81A /* FBSDKLoginKit.framework */; };
+		84669FE71B4227580011D81A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84669FE61B4227580011D81A /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		84669FCE1B421F400011D81A /* Tutorial_37Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tutorial_37Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84669FD31B421F400011D81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84669FD41B421F400011D81A /* Tutorial_37Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tutorial_37Tests.m; sourceTree = "<group>"; };
+		84669FDE1B42264C0011D81A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84669FE01B4226BC0011D81A /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKStrings.bundle; path = ../../FacebookSDK/FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		84669FE21B4227270011D81A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		84669FE41B42273E0011D81A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		84669FE61B4227580011D81A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84669FE71B4227580011D81A /* FBSDKShareKit.framework in Frameworks */,
+				84669FDF1B42264C0011D81A /* UIKit.framework in Frameworks */,
+				84669FE31B4227270011D81A /* FBSDKCoreKit.framework in Frameworks */,
+				84669FE51B42273E0011D81A /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,11 @@
 		84669FAC1B421F400011D81A = {
 			isa = PBXGroup;
 			children = (
+				84669FE61B4227580011D81A /* FBSDKShareKit.framework */,
+				84669FE41B42273E0011D81A /* FBSDKLoginKit.framework */,
+				84669FE21B4227270011D81A /* FBSDKCoreKit.framework */,
+				84669FE01B4226BC0011D81A /* FacebookSDKStrings.bundle */,
+				84669FDE1B42264C0011D81A /* UIKit.framework */,
 				84669FB71B421F400011D81A /* Tutorial_37 */,
 				84669FD11B421F400011D81A /* Tutorial_37Tests */,
 				84669FB61B421F400011D81A /* Products */,
@@ -202,6 +221,7 @@
 				84669FC41B421F400011D81A /* Main.storyboard in Resources */,
 				84669FC91B421F400011D81A /* LaunchScreen.xib in Resources */,
 				84669FC61B421F400011D81A /* Images.xcassets in Resources */,
+				84669FE11B4226BC0011D81A /* FacebookSDKStrings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +367,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/admin/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = Tutorial_37/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +381,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/admin/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = Tutorial_37/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +444,7 @@
 				84669FDA1B421F400011D81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84669FDB1B421F400011D81A /* Build configuration list for PBXNativeTarget "Tutorial_37Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +453,7 @@
 				84669FDD1B421F400011D81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
