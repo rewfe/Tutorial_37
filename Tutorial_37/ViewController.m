@@ -16,6 +16,9 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    self.loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
+    [self.view addSubview:loginButton];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
