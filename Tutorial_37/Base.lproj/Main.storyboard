@@ -16,39 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Alo-sp-oD1" customClass="FBProfilePictureView">
-                                <rect key="frame" x="86" y="57" width="77" height="74"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cta-IF-xyr">
-                                <rect key="frame" x="59" y="28" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cta-IF-xyr">
+                                <rect key="frame" x="50" y="68" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9C-VN-jpU">
-                                <rect key="frame" x="69" y="151" width="280" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9C-VN-jpU">
+                                <rect key="frame" x="207" y="327" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O10-nh-fl8">
-                                <rect key="frame" x="152" y="212" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O10-nh-fl8">
+                                <rect key="frame" x="207" y="376" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7sD-uN-lEa" customClass="FBLoginValue">
-                                <rect key="frame" x="109" y="263" width="200" height="50"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vat-os-fIS" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="142" y="428" width="200" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J5c-dG-9J8" customClass="FBProfilePictureView">
+                                <rect key="frame" x="153" y="146" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="O10-nh-fl8" secondAttribute="centerX" constant="72" id="0WJ-qN-dlV"/>
+                            <constraint firstAttribute="centerX" secondItem="e9C-VN-jpU" secondAttribute="centerX" constant="72" id="2fn-ll-7Oa"/>
+                            <constraint firstAttribute="centerY" secondItem="O10-nh-fl8" secondAttribute="centerY" constant="-86.5" id="AnX-Qb-Ub4"/>
+                            <constraint firstAttribute="centerY" secondItem="e9C-VN-jpU" secondAttribute="centerY" constant="-37.5" id="SED-tF-VhA"/>
+                            <constraint firstAttribute="centerY" secondItem="Cta-IF-xyr" secondAttribute="centerY" constant="221.5" id="gFY-Pa-wAG"/>
+                            <constraint firstAttribute="centerX" secondItem="Cta-IF-xyr" secondAttribute="centerX" constant="229" id="qbg-mf-m7D"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="blLoginStatus" destination="Cta-IF-xyr" id="ytz-uR-sfa"/>
                         <outlet property="lblEmail" destination="O10-nh-fl8" id="tKx-Cr-F0F"/>
                         <outlet property="lblUsername" destination="e9C-VN-jpU" id="Wj2-Z2-Rq6"/>
-                        <outlet property="loginButton" destination="7sD-uN-lEa" id="8D8-ft-MgW"/>
-                        <outlet property="profilePicture" destination="Alo-sp-oD1" id="iU5-4J-OFw"/>
+                        <outlet property="loginButton" destination="vat-os-fIS" id="TkA-lh-rFG"/>
+                        <outlet property="profilePicture" destination="J5c-dG-9J8" id="ByR-0W-pga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
