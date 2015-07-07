@@ -21,5 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblUsername;
 
 @property (weak, nonatomic) IBOutlet UILabel *lblEmail;
+
+
 @end
 

@@ -10,7 +10,6 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-
 @interface ViewController ()
 
 -(void)toggleHiddenState:(BOOL)shouldHide;
@@ -31,8 +30,8 @@
     self.loginButton.readPermissions = @[@"public_profile", @"email"];
     self.loginButton.delegate = self;
     
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -51,5 +50,12 @@
     
     [self toggleHiddenState:NO];
 }
+
+
+-(void)loginView:(FBSDKLoginButton *)loginView handleError:(NSError *)error{
+    NSLog(@"%@", [error localizedDescription]);
+}
+
+
 
 @end
